@@ -218,6 +218,7 @@ class BulkManager implements GridField_HTMLProvider, GridField_ColumnProvider, G
     {
         $cb = CheckboxField::create('bulkSelect_' . $record->ID)
             ->addExtraClass('bulkSelect no-change-track')
+            ->setAttribute('style','position:relative')
             ->setAttribute('data-record', $record->ID);
 
         return $cb->Field();
@@ -288,6 +289,7 @@ class BulkManager implements GridField_HTMLProvider, GridField_ColumnProvider, G
         )
             ->setSource($actionsListSource)
             ->addExtraClass('bulkActionName no-change-track form-group--no-label')
+            ->setAttribute('style','position:relative')
             ->setAttribute('id', '')
             ->setEmptyString(_t('SilverStripe\Admin\LeftAndMain.DropdownBatchActionsDefault', 'Choose an action...'));
             
