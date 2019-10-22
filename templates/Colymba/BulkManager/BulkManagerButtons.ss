@@ -17,6 +17,7 @@
         <label class="form-check-label">
             <input class="no-change-track bulkSelectAll form-check-input"
                 type="checkbox"
+                style="position:relative"
                 title="<% _t('GRIDFIELD_BULK_MANAGER.SELECT_ALL_LABEL', '$Select.Label') %>"
                 name="toggleSelectAll" />
                 
